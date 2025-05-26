@@ -1,267 +1,368 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Portifólio - Ângelo David</title>
-    <style>
-        
-    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="#home" class="logo">Ângelo David</a>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#sobre" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#habilidades" class="nav-link">Habilities</a></li>
-            <li class="nav-item"><a href="#projetos" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#contato" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header/Hero Section -->
-    <header id="home">
-        <div class="particles" id="particles-js"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Web Developer Full Stack</h1>
-            <p class="hero-subtitle">Learning and developing for better experiences</p>
-            <a href="#projetos" class="btn btn-primary">My Projects</a>
-        </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>Meu Portfólio</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="sobre">
-        <h2 class="section-title">About me</h2>
-        <div class="about-container">
-            <div class="about-img">
-                <embed src="assets/cv.pdf" type="application/pdf" />
-                <a href="assets/cv.pdf" download class="btn btn-primary download-btn">Download CV</a>
+    <!-- Seção Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, eu sou <span class="highlight">Ângelo David</span></h1>
+            <p>Desenvolvedor Web Full Stack</p>
+            <p class="hero-description">
+                Transformo ideias em experiências digitais incríveis através de código limpo e design intuitivo.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
             </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
             <div class="about-content">
-                <p class="about-text">
-                    Hello! I'm a web developer passionate about creating digital solutions that combine intuitive design with powerful functionality. 
-                    With over 3 years of experience developing responsive and interactive web applications since the beginning of my studies, I'm constantly 
-                    exploring new technologies, programming languages ​​and improving my skills.
-                </p>
-                <p class="about-text">
-                    My journey as a developer began in IT college, where I discovered my passion for transforming ideas into digital experiences. 
-                    Since then, I have worked on challenging projects that allow me to combine creativity with elegant technical solutions.
-                </p>
-                <a href="#contato" class="btn btn-primary">Contact me</a>
+                <div class="about-text">
+                    <p>
+                        Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras. 
+                        Com experiência em desenvolvimento front-end e back-end, trabalho para 
+                        entregar projetos que combinam funcionalidade excepcional com design elegante.
+                    </p>
+                    <p>
+                        Sempre em busca de novos desafios e oportunidades para crescer 
+                        profissionalmente, adoro trabalhar em equipe e contribuir para 
+                        projetos que fazem a diferença.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <strong>Localização:</strong> Sumaré, São Paulo
+                        </div>
+                        <div class="info-item">
+                            <strong>Email:</strong> angeloguittar2017@gmail.com
+                        </div>
+                        <div class="info-item">
+                            <strong>Telefone:</strong> (19) 98904-7317
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="habilidades">
-        <h2 class="section-title">My Habilities</h2>
-        <div class="skills-container">
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-code"></i>
+    <!-- Seção Habilidades -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Front-end</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="skill-title">Front-end</h3>
-                <p class="skill-text">HTML5, CSS3, JavaScript, React, Tailwind</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-server"></i>
+                
+                <div class="skill-category">
+                    <h3>Back-end</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="skill-title">Back-end</h3>
-                <p class="skill-text">Python, PHP, C#</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3 class="skill-title">Database</h3>
-                <p class="skill-text">MySQL</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <h3 class="skill-title">UI/UX Design</h3>
-                <p class="skill-text">Figma, Princípios de Design, Acessibilidade</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <h3 class="skill-title">DevOps</h3>
-                <p class="skill-text">Git, GitHub, Netlify</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3 class="skill-title">Mobile</h3>
-                <p class="skill-text">Responsive web design</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projetos" class="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="carousel-item">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="assets/gka.png" alt="Projeto 1">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">GKA - Platform</h3>
-                            <p class="project-text">This web system was created for my final project. It consists of a medicine search system where the user can compare prices between the pharmacies closest to their location, using geolocation. The project aims to make it easier for the user to search for medicines (in addition to the paid features), and also to generate greater reach for pharmacies (which pay to use the platform). The system has logins as a user, pharmacy and administrator, download the project to test it.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">PHP</span>
-                                <span class="project-tag">MySQL</span>
-                                <span class="project-tag">JavaScript</span>
-                                <span class="project-tag">HTML</span>
-                                <span class="project-tag">CSS</span>
-                            </div>
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/gka.png" alt="Projeto 1">
+                        <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://projetomed.com.br/TECTI/2024/3TIA/grupo06/GKA/" class="project-link">Go to page</a>
-                                <a href="#" class="project-link">Download project</a>
+                                <a href="https://projetomed.com.br/TECTI/2024/3TIA/grupo06/GKA/" class="project-link">Ver Site</a>
+                                <a href="#" class="project-link">GitHub</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="assets/sistematic.png" alt="Projeto 2">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">school system</h3>
-                            <p class="project-text">This web system was developed to improve school organization. It allows the coordinator (admin) to register classes, teachers and subjects and relate them. The teacher can add a new system, whether for tests or tasks, describe them and set dates. The coordinator can manage them and create PDFs.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">PHP</span>
-                                <span class="project-tag">MySQL</span>
-                                <span class="project-tag">HTML</span>
-                                <span class="project-tag">CSS</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="http://sistematica.infinityfreeapp.com/" class="project-link">Go to page</a>
-                                <a href="#" class="project-link">Download project</a>
-                            </div>
+                    <div class="project-info">
+                        <h3>GKA - Plataforma Farmacêutica</h3>
+                        <p>Este sistema web foi criado para o meu projeto de conclusão de curso. Consiste em um sistema de busca de medicamentos onde o usuário pode comparar preços entre as 
+                            farmácias mais próximas de sua localização, usando geolocalização. O projeto visa facilitar a busca de medicamentos pelo usuário (além dos recursos pagos) 
+                            e também gerar maior alcance para as farmácias (que pagam para usar a plataforma). O sistema possui logins como usuário, farmácia e administrador.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="assets/calc.png" alt="Projeto 3">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Calculator</h3>
-                            <p class="project-text">a calculator with basic operations.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">HTML</span>
-                                <span class="project-tag">CSS</span>
-                                <span class="project-tag">JavaScript</span>
-                            </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/cepsearch.png" alt="Projeto 2">
+                        <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://regentrock.github.io/calculator/" class="project-link">Go to page</a>
-                                <a href="#" class="project-link">Ver Código</a>
+                                <a href="https://regentrock.github.io/cepsearch/" class="project-link">Ver Site</a>
+                                <a href="https://github.com/regentrock/cepsearch" class="project-link">GitHub</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="assets/weather.png" alt="Projeto 4">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Weather informations</h3>
-                            <p class="project-text">This project gets weather information from the city you type in the search bar.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">HTML</span>
-                                <span class="project-tag">CSS</span>
-                                <span class="project-tag">JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://regentrock.github.io/weather/" class="project-link">Go to page</a>
-                                <a href="#" class="project-link">Ver Código</a>
-                            </div>
+                    <div class="project-info">
+                        <h3>Buscador de CEP</h3>
+                        <p>Aplicação web para busca de CEP e preenchimento automático de endereço, utilizando a web API viaCEP.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="assets/qrcode.png" alt="Projeto 4">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">QR Code Generator</h3>
-                            <p class="project-text">This project gets the link you paste and generates a QR code.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">HTML</span>
-                                <span class="project-tag">CSS</span>
-                                <span class="project-tag">JavaScript</span>
-                            </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/weather.png" alt="Projeto 3">
+                        <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://regentrock.github.io/qrcodegen/" class="project-link">Go to page</a>
-                                <a href="#" class="project-link">Ver Código</a>
+                                <a href="https://regentrock.github.io/weather/" class="project-link">Ver Site</a>
+                                <a href="https://github.com/regentrock/weather" class="project-link">GitHub</a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Previsão Climática</h3>
+                        <p>Esta aplicação web exibe as principais informações climáticas da localização informada em tempo real, utilizando a web API OpenWeather.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/rdnum.png" alt="Projeto 4">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://regentrock.github.io/randomnumber/" class="project-link">Ver Site</a>
+                                <a href="https://github.com/regentrock/randomnumber" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Adivinhador de números - Jogo</h3>
+                        <p>Este projeto é um jogo de adivinhador de números aleatório. O usuário deve adivinhar o número escolhido aleatóriamente, com uma quantidade limitada de tentativas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/monstrocars.png" alt="Projeto 5">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://regentrock.github.io/monstrocars/index.html" class="project-link">Ver Site</a>
+                                <a href="https://github.com/regentrock/monstrocars" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Loja de Carros - Virtual</h3>
+                        <p>Este é um site para uma loja de carros, contendo suas informações, catálogo, contato, etc. (informações fictícias para o projeto).</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/calculator.png" alt="Projeto 6">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://regentrock.github.io/calculator/" class="project-link">Ver Site</a>
+                                <a href="https://github.com/regentrock/calculator" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculadora</h3>
+                        <p>Este é um simples projeto em JS que consiste em simular uma calculadora totalmente funcional.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/todo.png" alt="Projeto 6">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://regentrock.github.io/to-do-list/" class="project-link">Ver Site</a>
+                                <a href="https://github.com/regentrock/to-do-list" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Lista de Tarefas</h3>
+                        <p>Esta aplicação web é uma lista de tarefas, onde o usuário pode adicionar suas tarefas, 
+                            marcá-las como concluídas, e excluí-las. O projeto utiliza o LocalStorage, API do JavaScript, para armazenar as informações do usuário em seu dispositivo.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-btn prev">❮</div>
-            <div class="carousel-btn next">❯</div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contato" class="contact">
-        <h2 class="section-title">Contact me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos trabalhar juntos?</h3>
+                    <p>Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato comigo!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>angeloguittar2017@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h4>Telefone</h4>
+                                <p>(19) 98904-7317</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Localização</h4>
+                                <p>Sumaré, São Paulo</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="contact-text">Sumaré, SP - Brazil</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="https://github.com/regentrock" class="social-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/%C3%A2ngelo-david-0962a6279/" class="social-link">Twitter</a>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <p class="contact-text">angeloguittar2017@gmail.com</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <p class="contact-text">+55 (19) 98904-7317</p>
-                </div>
-            </div>
-            <div class="contact-form">
-                <form>
+                
+                <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your name">
+                        <input type="text" id="name" name="name" placeholder="Seu Nome" required>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Your e-mail">
+                        <input type="email" id="email" name="email" placeholder="Seu Email" required>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="About">
+                        <input type="text" id="subject" name="subject" placeholder="Assunto" required>
                     </div>
+                    
                     <div class="form-group">
-                        <textarea class="form-control" placeholder="message..."></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Send Message</button>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
             </div>
         </div>
@@ -269,104 +370,11 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="https://github.com/regentrock" class="footer-link"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/%C3%A2ngelo-david-0962a6279/" class="footer-link"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/angelodavidmusic/" class="footer-link"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+            <p>&copy; 2024 Portfólio - Ângelo David. Todos os direitos reservados.</p>
         </div>
-        <p class="footer-text">&copy; 2025 Ângelo David. All rights reserved.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-        
-        // Mobile menu
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        hamburger.addEventListener('click', function() {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-        
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function() {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-        
-        // Carousel
-        const carousel = document.querySelector('.carousel');
-        const carouselItems = document.querySelectorAll('.carousel-item');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-        let currentIndex = 0;
-        const itemWidth = 100; // percentage
-        
-        // Initialize carousel
-        function updateCarousel() {
-            carousel.style.transform = `translateX(-${currentIndex * itemWidth}%)`;
-        }
-        
-        prevBtn.addEventListener('click', function() {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
-        });
-        
-        nextBtn.addEventListener('click', function() {
-            if (currentIndex < carouselItems.length - 1) {
-                currentIndex++;
-                updateCarousel();
-            }
-        });
-
-    // Add smooth scrolling for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Add intersection observer for fade-in animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('section').forEach(section => {
-        section.classList.add('fade-out');
-        observer.observe(section);
-    });
-
-</script>
+    <script src="script.js"></script>
+</body>
+</html>
